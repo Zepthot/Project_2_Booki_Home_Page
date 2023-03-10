@@ -56,6 +56,9 @@ nav li {
 nav a {
     text-decoration: none;
     color: black;
+    border-top: white 1px solid;
+    padding-top: 20px;
+    transition: border-top 0.5s, color 0.5s;
 }
 
 nav a:hover {
@@ -162,6 +165,7 @@ main {
     padding: 4px 19px;
     align-items: center;
     margin: 0px 10px;
+    transition: border-color 0.5s, background-color 0.5s;
 }
 
 .filter-buttons button:hover {
@@ -195,7 +199,6 @@ main {
     align-items: center;
     margin-right: 10px;
 }
-
 /* Information groupe, search bar and filters */
 
 .section-title {
