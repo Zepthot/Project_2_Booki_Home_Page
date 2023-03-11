@@ -381,12 +381,11 @@ main {
 .footer-info .footer-title {
     font-size: 18px;
     font-weight: 700;
-    padding-left: 70px;
 }
 
 .footer-info .footer-section {
     width: 100%;
-    padding: 20px 0px;
+    padding: 20px;
 }
 
 .footer-info ul {
@@ -403,7 +402,6 @@ main {
     font-size: 16px;
     font-weight: 400;
     padding-top: 15px;
-    padding-left: 70px;
 }
 /* Footer */
 
@@ -414,6 +412,7 @@ main {
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
+        margin: 50px;
     }
 
     .hebergements {
@@ -441,6 +440,35 @@ main {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .activities {
+        margin: 50px;
+    }
+
+    .activities-card {
+        gap: 30px;
+    }
+
+    .activities-card .card {
+        height: 270px;
+    }
+
+    .activities-card .card-title {
+        padding: 16px 19px;
+    }
+
+    .activities-card img {
+        height: 200px;
+        min-height: 74%;
+    }
+
+    .footer-info {
+        margin: 65px 50px 0px 50px;
+    }
+
+    .footer-info ul {
+        padding: 0;
     }
 }
 
