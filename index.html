@@ -17,7 +17,7 @@
 
 <body>
     <div class="main-container">
-        <header>
+        <header class="header-container">
                 <img src="images/logo/Booki.png" class="logo-booki"/>
                 <nav>
                     <ul>
@@ -36,25 +36,29 @@
                     <h1>Trouver votre hébergement pour des vacances de rêve<br /><span class="headline-subtitle">En plein centre-ville ou en pleine nature</span></h1>
                 </div>
                 <form method="get" action="" class="search-bar" id="search-bar">
-                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    <i class="fa-sharp fa-solid fa-location-dot location-icon"></i>
                     <input type="text" placeholder="Marseille, France" />
-                    <button class="search-button" type="button" form="search-bar">Rechercher</button>
+                    <button class="search-button" type="button" form="search-bar"><span class="search-text">Rechercher</span><i class="fa-solid fa-magnifying-glass search-icon"></i></button>
                 </form>
                 <div class="filter-bar">
-                    <p>Filtres</p>
+                    <h2>Filtres</h2>
                     <div class="filter-buttons">
-                        <button>
-                            <i class="fa-solid fa-money-bill-wave"></i><p>Économique</p>
-                        </button>
-                        <button>
-                            <i class="fa-solid fa-person"></i><p>Familial</p>
-                        </button>
-                        <button>
-                            <i class="fa-solid fa-heart"></i><p>Romantique</p>
-                        </button>
-                        <button>
-                            <i class="fa-solid fa-fire"></i><p>Nos pépites</p>
-                        </button>
+                        <div class="buttons-group">
+                            <button>
+                                <i class="fa-solid fa-money-bill-wave"></i><p>Économique</p>
+                            </button>
+                            <button>
+                                <i class="fa-solid fa-person"></i><p>Familial</p>
+                            </button>
+                        </div>
+                        <div class="buttons-group">
+                            <button>
+                                <i class="fa-solid fa-heart"></i><p>Romantique</p>
+                            </button>
+                            <button>
+                                <i class="fa-solid fa-fire"></i><p>Nos pépites</p>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="info-footer">
