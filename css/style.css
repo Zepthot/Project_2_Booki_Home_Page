@@ -37,7 +37,7 @@ a {
 /* Header */
 .header-container {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
 }
 
@@ -252,6 +252,7 @@ main {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin: 50px;
 }
 
 .hebergements-and-populaires section {
@@ -654,6 +655,10 @@ main {
 
     .activities-card .card {
         height: 200px;
+    }
+
+    .activities-card .card a {
+        height: 100%;
     }
 
     .footer-info {
