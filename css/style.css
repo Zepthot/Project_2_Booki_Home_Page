@@ -27,6 +27,13 @@ body {
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    width: 100%;
+}
+
 /* Header */
 .header-container {
     display: flex;
@@ -265,17 +272,14 @@ main {
     justify-content: space-between;
 }
 
-.hebergements-cards a {
-    text-decoration: none;
-    color: black;
-}
-
 .hebergements-cards .card {
-    display: flex;
-    flex-direction: column;
     margin-top: 33px;
     width: 250.33px;
     height: 210px;
+}
+
+.hebergements-cards .card a {
+    flex-direction: column;
 }
 
 .hebergements-cards img {
@@ -367,9 +371,12 @@ main {
 .activities-card .card {
     width: 297.5px;
     height: 439px;
+    padding: 0;
+}
+
+.activities-card .card a {
     display: flex;
     flex-direction: column;
-    padding: 0;
 }
 
 .activities-card img {
