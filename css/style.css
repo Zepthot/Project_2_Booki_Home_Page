@@ -160,7 +160,7 @@ main {
     margin-top: 35px;
 }
 
-.filter-bar h2, .filter-bar p {
+.filter-bar h2, .filter-title {
     font-weight: 700;
     font-size: 18px;
 }
