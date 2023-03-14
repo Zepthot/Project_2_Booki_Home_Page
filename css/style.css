@@ -57,7 +57,7 @@ nav ul {
 nav li {
     list-style-type: none;
     font-size: 16px;
-    margin: 30px;
+    margin: 0px 30px 30px 30px;
 }
 
 nav a {
@@ -74,6 +74,7 @@ nav a:hover {
     border-top: #0065FC 1px solid;
     padding-top: 20px;
 }
+
 /* Header */
 
 main {
@@ -160,7 +161,8 @@ main {
     margin-top: 35px;
 }
 
-.filter-bar h2, .filter-title {
+.filter-bar h2,
+.filter-title {
     font-weight: 700;
     font-size: 18px;
 }
@@ -218,6 +220,7 @@ main {
     align-items: center;
     margin-right: 10px;
 }
+
 /* Information groupe, search bar and filters */
 
 .section-title {
@@ -275,7 +278,7 @@ main {
 
 .hebergements-cards .card {
     margin-top: 33px;
-    width: 250.33px;
+    width: 30%;
     height: 210px;
 }
 
@@ -352,6 +355,7 @@ main {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
 /* Hebergements And Populaires */
 
 /* Activities */
@@ -367,6 +371,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .activities-card .card {
@@ -389,6 +394,7 @@ main {
 .activities-card h3 {
     padding: 20px;
 }
+
 /* Activities */
 
 /* Footer */
@@ -423,6 +429,7 @@ main {
     font-weight: 400;
     padding-top: 15px;
 }
+
 /* Footer */
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -430,6 +437,12 @@ main {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .filter-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
         margin: 50px;
@@ -497,6 +510,7 @@ main {
     .main-container {
         min-width: 320px;
     }
+
     .header-container {
         display: flex;
         flex-direction: column;
@@ -518,15 +532,13 @@ main {
         align-items: center;
         padding: 30px;
         margin: 0;
-    }
-
-    .nav li {
-        border-bottom: white 2px solid;
+        border-bottom: #F2F2F2 2px solid;
         padding-bottom: 20px;
         transition: border-bottom 0.5s, color 0.5s;
     }
 
-    nav li:hover, nav li:active {
+    nav li:hover,
+    nav li:active {
         color: #0065FC;
         border-bottom: #0065FC 2px solid;
     }
@@ -534,6 +546,7 @@ main {
     nav a {
         border-top: none;
         padding-top: 0;
+        justify-content: center;
     }
 
     nav a:hover {
@@ -551,7 +564,11 @@ main {
     }
 
     .search-bar {
-        justify-content: center;
+        justify-content: space-between;
+    }
+
+    .search-bar input {
+        width: 100%;
     }
 
     .search-button {
@@ -655,6 +672,7 @@ main {
 
     .activities-card .card {
         height: 200px;
+        width: auto;
     }
 
     .activities-card .card a {
@@ -668,5 +686,7 @@ main {
 
     .footer-info .footer-section {
         padding: 30px 30px 20px 30px;
+        width: auto;
     }
 }
+
