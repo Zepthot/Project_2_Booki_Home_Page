@@ -5,3 +5,7 @@ This repository contains the HTML/CSS code to address the problem of the second 
 ## Context
 
 Booki is a start-up that wants to develop a website that allows users to find accommodation and activities in the city of their choice.
+
+## Result
+
+https://zepthot.github.io/Project_2_Booki_Home_Page/
